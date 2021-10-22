@@ -6,7 +6,7 @@ pipeline {
             steps {
                 try{
                         echo 'Hello'
-                        git 'https://github.com/Alpanavyas/first-jenkins.git'
+                        git 'https://github.com/Alpanavyas/Jenkins-pull.git'
                 }
                 catch (err){
       echo err
