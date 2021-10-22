@@ -4,7 +4,13 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello'                
+                echo 'Hello'
+                try{
+                        git 'https://github.com/Alpanavyas/first-jenkins.git'
+                }
+                catch (err){
+      echo err
+   }
             }
         }
     }
